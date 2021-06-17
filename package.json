@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "this is a web application named shoppy",
   "main": "app.js",
-  
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,10 +13,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "body-parser": "^1.19.0",
-    "bootstrap": "^5.0.1",
     "express": "^4.17.1",
     "hbs": "^4.1.2",
-    "jquery": "^3.6.0",
     "mongoose": "^5.12.13",
     "nodemon": "^2.0.7",
     "serve": "^12.0.0",
@@ -25,6 +22,6 @@
   },
   "engines": {
     "node": ">=14.15.1",
-    "npm":"6.14.8"
+    "npm": "6.14.8"
   }
 }

@@ -7,37 +7,24 @@ require("./src/db/conn");
 const User = require("./src/models/user_feedback");
 const app = express();
 
-const port = process.env.port || 5000;
+const port = process.env.Port || 5000;
 
 //setting up path
-const staticpath = path.join(__dirname, "../public");
+const staticpath = path.join(__dirname, "./public");
 const templatepath = path.join(__dirname, "./templates/views");
 const partialpath = path.join(__dirname, "./templates/partials");
 
 //middleware
 app.use(
-  `/css`,
-  express.static(path.join(__dirname, "../node_modules/bootstrap/dist/css"))
-);
-app.use(
-  `/js`,
-  express.static(path.join(__dirname, "../node_modules/bootstrap/dist/js"))
-);
-app.use(
-  `/jq`,
-  express.static(path.join(__dirname, "../node_modules/jquery/dist"))
-);
-
-app.use(
   `/font`,
   express.static(
-    path.join(__dirname, "../node_modules/@fortawesome/fontawesome-free/css")
+    path.join(__dirname, "./node_modules/@fortawesome/fontawesome-free/css")
   )
 );
 app.use(
   `/fontjs`,
   express.static(
-    path.join(__dirname, "../node_modules/@fortawesome/fontawesome-free/js")
+    path.join(__dirname, "./node_modules/@fortawesome/fontawesome-free/js")
   )
 );
 
