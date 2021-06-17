@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "this is a web application named shoppy",
   "main": "app.js",
+ 
   "scripts": {
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,5 +21,8 @@
     "mongoose": "^5.12.13",
     "nodemon": "^2.0.7",
     "validator": "^13.6.0"
-  }
+  },
+  "engines": {
+    "node": "14.15.1"
+    }
 }
