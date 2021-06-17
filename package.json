@@ -4,7 +4,7 @@
   "description": "this is a web application named shoppy",
   "main": "app.js",
   "scripts": {
-    "start":"nodemon app.js",
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/app.js -e js,hbs"
   },
@@ -18,6 +18,7 @@
     "hbs": "^4.1.2",
     "jquery": "^3.6.0",
     "mongoose": "^5.12.13",
+    "nodemon": "^2.0.7",
     "validator": "^13.6.0"
   }
 }
