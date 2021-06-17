@@ -7,7 +7,7 @@ require("./src/db/conn");
 const User = require("./src/models/user_feedback");
 const app = express();
 
-const port = process.env.Port || 5000;
+const port = process.env.port || 5000;
 
 //setting up path
 const staticpath = path.join(__dirname, "../public");
