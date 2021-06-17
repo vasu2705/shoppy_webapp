@@ -3,16 +3,16 @@ const path = require("path");
 var bodyParser = require("body-parser");
 const hbs = require("hbs");
 const { registerPartials } = require("hbs");
-require("./db/conn");
-const User = require("./models/user_feedback");
+require("./src/db/conn");
+const User = require("./src/models/user_feedback");
 const app = express();
 
 const port = process.env.Port || 3000;
 
 //setting up path
 const staticpath = path.join(__dirname, "../public");
-const templatepath = path.join(__dirname, "../templates/views");
-const partialpath = path.join(__dirname, "../templates/partials");
+const templatepath = path.join(__dirname, "./templates/views");
+const partialpath = path.join(__dirname, "./templates/partials");
 
 //middleware
 app.use(
